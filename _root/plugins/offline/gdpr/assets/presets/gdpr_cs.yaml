@@ -1,0 +1,60 @@
+title: "GDPR preset (CS)"
+groups:
+-   name: Technické Cookies
+    required: 1
+    slug: functional_cookies
+    sort_order: 1
+    description: |
+        <p>Technické cookies jsou nezbytné pro správné fungování webu.</p>
+    cookies:
+    -   name: Technické
+        code: functional
+        initial_status: 1
+        sort_order: 1
+        description: |
+            <p>Technické cookies se používají pro odlišení vašich aktivit na stránce od ostatních požadavků na web.</p>
+
+
+-   name: Personalizované Cookies
+    required: 0
+    slug: personalized_cookies
+    sort_order: 2
+    description: |
+        <p>Tyto cookies jsou nezbytné pro vaší registraci a odesílání kontaktních formulářů.</p>
+    cookies:
+    -   name: Personalizované
+        code: personalized
+        initial_status: 0
+        sort_order: 1
+        description: |
+            <p>Používáme tyto cookies abychom mohli dodávat zejména našim registrovaným uživatelům co nejlepší obsah (Bez těchto cookies registrace není možná).</p>
+
+
+-   name: Analytické Cookies
+    required: 0
+    slug: analytics_cookies
+    sort_order: 3
+    description: |
+        <p>Tyto cookies nám pomáhají sledovat používání našich stránek.</p>
+    cookies:
+    -   name: Analytické
+        code: analytics
+        initial_status: 0
+        sort_order: 1
+        description: |
+            <p>Analytické cookies nám umožňují měření výkonu našeho webu a našich reklamních kampaní (např. Google Analytics). Pokud vypnete používání analytických cookies ve vztahu k Vaší návštěvě, ztrácíme možnost analýzy výkonu a následné zlepšování našich stránek.</p>
+
+
+-   name: Reklamní Cookies
+    required: 0
+    slug: advertisement_cookies
+    sort_order: 4
+    description: |
+        <p>Reklamní cookies pomáhají zobrazovat reklamu na webu založenou na vašich zájmech.</p>
+    cookies:
+    -   name: Reklamní
+        code: advertisement
+        initial_status: 0
+        sort_order: 1
+        description: |
+            <p>Reklamní cookies používáme my nebo naši partneři, abychom Vám mohli zobrazit vhodné obsahy nebo reklamy jak na našich stránkách, tak na stránkách třetích subjektů s využitím tzv. pseudonymizovaných profilů, které neudržují vaše osobní údaje.</p>

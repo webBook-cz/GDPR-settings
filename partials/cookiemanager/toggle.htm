@@ -1,0 +1,12 @@
+<label>
+	<input name="cookies[{{ cookie.code }}][enabled]"
+	       value="1"
+	       class="cb js-cookie-toggle cookie-toggle"
+	       id="toggle-{{ cookie.id }}"
+	       type="checkbox"
+	        {{ isChecked or group.required ? 'checked' : '' }}
+	        {{ group.required ? 'disabled' : '' }}
+	/>
+  <i></i> 
+  <span>{{ cookie.name }}</span> <span class="divider d-none d-md-inline">&mdash;</span> <small class="d-none d-md-inline">{{ cookie.description | strip_tags }}</small>
+</label>

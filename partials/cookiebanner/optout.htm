@@ -1,0 +1,11 @@
+<div class="gdpr-banner__opt-out">
+    {{ 'offline.gdpr::lang.cookie_banner.decline' | trans }}
+    <a role="button" 
+         tabindex="0" 
+         class="gdpr-banner__button gdpr-banner__button--opt-out"
+         data-request="onDecline"
+         data-request-success="document.querySelector('.gdpr-banner').remove()"
+    >
+        {{ 'offline.gdpr::lang.cookie_banner.here' | trans }}
+    </a>.
+</div>

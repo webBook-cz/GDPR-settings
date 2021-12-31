@@ -1,0 +1,50 @@
+[cookieBanner]
+include_css = 0
+update_partial = "gdpr/gdpr"
+update_selector = "#gdpr-reload"
+cookie_manager_page = "gdpr/cookies"
+==
+<?php
+public $oldLocale;
+
+function onStart()
+{
+    if (array_key_exists('_gdpr_submit', $_POST)) {
+        $this['hide_gdpr'] = true;
+    }
+}
+?>
+==
+<!doctype html>
+<html lang="{{ this.theme.site_locale }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }} | {{ this.theme.site_title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% partial 'site/styles' %}
+
+    {% if hide_gdpr %}
+    <style>
+        .gdpr-banner {
+            display: none;
+        }
+    </style>
+    {% endif %}
+
+</head>
+<body id="body">
+    {% component 'cookieBanner' theme = 'light' %}
+    {% partial 'site/header' %}
+    {% partial 'site/nav-menu' %}
+    <main class="web-main">
+        {% page %}
+    </main>
+    {% partial 'site/footer' %}
+
+    <div id="gdpr-reload">
+        {% partial 'gdpr/gdpr' %}
+    </div>
+
+    {% partial 'site/scripts' %}
+</body>
+</html>

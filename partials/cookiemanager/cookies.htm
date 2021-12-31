@@ -1,0 +1,36 @@
+<div class="container">
+<h4 class="gdpr-settings">{{ 'offline.gdpr::lang.cookie_manager.title' | trans }}</h4>
+{% for group in groups %}
+
+	{% if (this.theme.data[group.slug] is defined and this.theme.data[group.slug]) or this.theme.data[group.slug] is not defined %}
+
+	    <div class="gdpr-cookie-manager__cookies">
+	        {% for cookie in group.cookies %}
+	            {% partial __SELF__  ~ '::cookie' cookie=cookie group=group %}
+	        {% endfor %}
+	    </div>
+		<div class="group-explanation">
+			{{ group.name }} - {{ group.description | strip_tags }}
+		</div>
+	
+	{% endif %}
+
+{#{ d(this.theme.data) }#}
+
+{% endfor %}
+	<div class="settings-buttons">
+	
+		<select class="gdpr-cookie-manager__consent_expiry btn btn-gdpr btn-wide" name="consent_expiry" id="gdpr">
+		    {% for i in [3, 6, 12, 24, 36] %}
+		        {% set selected = __SELF__.consentExpiry | default(12) %}
+		        <option value="{{ i }}" {{ selected == i ? 'selected' }}>
+		            {{ ('offline.gdpr::lang.cookie_manager.expiry.' ~ i) | trans }}
+		        </option>
+		    {% endfor %}
+		</select>
+		<button type="submit" 
+		class="gdpr-cookie-manager__submit-button btn btn-primary btn-wide submit-cookie-form-button">
+		    {{ 'offline.gdpr::lang.common.save_settings' | trans }}
+		</button>
+	</div>
+</div>

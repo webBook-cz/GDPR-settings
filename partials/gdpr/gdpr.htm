@@ -1,0 +1,8 @@
+==
+{% if gdprCookieAllowed('analytics') %}
+    {% if this.theme.google_analytics %}
+        {% partial 'site/ga'  trackingID = this.theme.google_analytics %}
+    {% endif %}
+    {{ this.theme.ads_cookies }}
+{% endif %}
+{#{ d(gdprIsUndecided()) }#}

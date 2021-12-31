@@ -1,0 +1,274 @@
+$color-bg-dark: rgba(40,40,40,0.98);
+$color-bg-light: rgba(250,250,250,0.98);
+$color-txt-dark: $dark;
+$color-txt-light: $light;
+$color-txt-dark-hi: $black;
+$color-txt-light-hi: $white;
+
+$color-disabled: $secondary;
+$color-off: lighten($primary,40);
+$color-on: $primary;
+
+
+.gdpr-banner {
+  position: fixed;
+  padding: 15px;
+  bottom: 0;
+  z-index: 10000;
+  font-display: swap;
+  font-style: normal;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 300;
+  &.dark-theme {
+    color: $color-txt-light;
+    background-color: $color-bg-dark; 
+  }
+  &.light-theme {
+    color: $color-txt-dark;
+    background-color: $color-bg-light; 
+  }
+
+   a {
+    font-weight: 400;
+   }
+}
+
+.gdpr-banner_part-1 {
+  padding: 1.2rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 0.6rem 0;
+  }
+}
+
+.gdpr-banner_part-2 {
+  text-align: center;
+}
+
+.gdpr-banner__wrapper {
+  position: relative;
+//  max-width: 1200px;
+//  margin: 0 auto;
+//  display: -webkit-box;
+//  display: -webkit-flex;
+//  display: -ms-flexbox;
+//  display: flex;
+//  flex-direction: column;
+//  -webkit-box-align: center;
+//  -webkit-align-items: center;
+//  -ms-flex-align: center;
+//  align-items: center;
+}
+
+.gdpr-banner__message {
+  line-height: 1.2rem;
+}
+
+.gdpr-banner__button {
+  min-width: 140px;
+}
+
+.gdpr-banner__opt-out {
+  margin-top: 1rem;
+}
+
+.advanced-gdpr {
+  overflow-y: hidden;
+  max-height: 540px; /* approximate max height */
+
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.advanced-gdpr.closed {
+  max-height: 0;
+}
+
+.btn-gdpr {
+  background-color: $color-disabled
+}
+
+.gdpr-banner__button--dismiss {
+  //position: absolute;
+  cursor: pointer;
+  background: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.gdpr-banner__dismiss {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  z-index: 1000;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+
+
+//// MANAGER
+h4.gdpr-settings {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+}
+
+.group-explanation {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 300;
+    @include media-breakpoint-down(md) {
+      max-height: 2.1rem;
+      overflow: auto;
+    }
+}
+
+.gdpr-full {
+  .group-explanation {
+    max-height: 5rem;
+    overflow: visible;
+  }
+}
+
+.settings-buttons {
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn-wide {
+  width: 200px;
+  height: 42px;
+    @include media-breakpoint-down(md) {
+      width: 140px;
+    }
+}
+
+//// SWITCH
+
+label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+  margin: 1em 0 0.2em;
+
+  @include media-breakpoint-down(md) {
+    margin: 0.3em 0 0.2em;
+  }
+
+  > input {
+    display: none;
+  }
+  
+  small {
+    font-size: 0.9rem;
+  }
+  
+  i {
+    display: inline-block;
+    width: 64px;
+    height: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    transition: .25s .09s;
+    position: relative;
+    background: $color-off;
+      @include media-breakpoint-down(md) {
+        height: 30px;
+      }
+
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 30px;
+      height: 30px;
+      top: 5px;
+      left: 5px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      box-shadow: 1px 2px 4px 0 rgba(#000, .4);
+      transition: .15s;
+      @include media-breakpoint-down(md) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  
+  // Checked-state
+  > input:checked + i {
+    background: $color-on;
+  }
+
+  > input:disabled + i {
+    background: $color-disabled;
+  }
+
+  > input:checked + i + span {
+    color: $color-on;
+  }
+  
+  > input:checked + i:after {
+    transform: translateX(25px);
+      @include media-breakpoint-down(md) {
+        transform: translateX(35px);
+      }
+  }
+}
+
+.dark-theme {
+
+  h4.gdpr-settings {
+    color: $color-txt-light-hi;
+    border-bottom: 1px solid lighten($color-bg-dark,5);
+  }
+  .group-explanation {
+    color: $color-txt-light;
+  }
+  .gdpr-banner__button--dismiss {
+      color: $color-txt-light-hi;
+      &:hover {
+        color: $color-on;
+      }
+  }
+  label {
+    span {
+      color: $color-txt-light-hi;
+    }
+    small {
+      color: $color-txt-light;
+    }
+  }  
+}
+
+.light-theme {
+
+  h4.gdpr-settings {
+    color: $color-txt-dark-hi;
+    border-bottom: 1px solid darken($color-bg-light,5);
+  }
+  .group-explanation {
+    color: $color-txt-dark;
+  }
+  .gdpr-banner__button--dismiss {
+      color: $color-txt-dark;
+      &:hover {
+        color: $color-on;
+      }
+  }
+  label {
+    span {
+      color: $color-txt-dark-hi;
+    }
+    small {
+      color: $color-txt-dark;
+    }
+  }  
+}
+

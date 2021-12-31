@@ -1,0 +1,23 @@
+{% if not __SELF__.hide %}
+    <div class="gdpr-banner {{__SELF__.properties.theme ?: 'dark'}}-theme">
+        <div class="advanced-gdpr closed" id="slider">
+       		{% partial 'gdpr/cookiemanager' %}
+       	</div>
+        <div class="gdpr-banner__wrapper">
+			{% partial __SELF__ ~ '::inner' %}
+        </div>
+    </div>
+{% endif %}
+
+{% put scripts %}
+    <script>
+        function acceptCookies() {
+            var checkboxes = document.querySelectorAll('.cookie-toggle[type="checkbox"]');
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = true;
+            }
+            
+            document.querySelector('.cookie-form').submit();
+        }
+    </script>
+{% endput %}

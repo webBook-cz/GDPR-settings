@@ -1,0 +1,66 @@
+/// Import Cookies settings - ssh
+
+php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_en.yaml --replace
+php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_cs.yaml --replace
+php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_sk.yaml --replace
+
+/// theme: fields.yaml settings
+
+        info_section_02:
+            tab: General
+            type: section
+            cssClass: "p-t-0"
+
+        google_analytics:
+            label: Google Analytics ID
+            tab: General
+            type: text
+            span: storm
+            cssClass: "col-sm-2 p-l-0"
+
+        cookies_info:
+            label: URL about cookies
+            tab: General
+            type: text
+            span: storm
+            default: /info/cookies
+            cssClass: "col-sm-2 p-l-0"
+
+        functional_cookies:
+            label: Functional cookies
+            tab: General
+            type: switch
+            default: true
+            span: storm
+            cssClass: "col-sm-2 p-l-0"
+
+        analytics_cookies:
+            label: Analytics cookies
+            tab: General
+            type: switch
+            default: true
+            span: storm
+            cssClass: "col-sm-2 p-l-0"
+
+        personalized_cookies:
+            label: Personal cookies
+            tab: General
+            type: switch
+            default: 1
+            span: storm
+            cssClass: "col-sm-2 p-l-0"
+
+        advertisement_cookies:
+            label: Advertisement cookies
+            tab: General
+            type: switch
+            default: false
+            span: storm
+            cssClass: "col-sm-2 p-l-0"
+
+        ads_cookies:
+            label: ADs cookies (campaigns, FB ads, etc.)
+            tab: General
+            type: textarea
+            size: tiny
+            span: full
