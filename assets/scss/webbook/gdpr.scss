@@ -149,76 +149,78 @@ h4.gdpr-settings {
 }
 
 //// SWITCH
+.gdpr-cookie-manager {
 
-label {
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: block;
-  margin: 1em 0 0.2em;
-
-  @include media-breakpoint-down(md) {
-    margin: 0.3em 0 0.2em;
-  }
-
-  > input {
-    display: none;
-  }
+  label {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 1em 0 0.2em;
   
-  small {
-    font-size: 0.9rem;
-  }
+    @include media-breakpoint-down(md) {
+      margin: 0.3em 0 0.2em;
+    }
   
-  i {
-    display: inline-block;
-    width: 64px;
-    height: 40px;
-    border-radius: 20px;
-    vertical-align: middle;
-    transition: .25s .09s;
-    position: relative;
-    background: $color-off;
-      @include media-breakpoint-down(md) {
+    > input {
+      display: none;
+    }
+    
+    small {
+      font-size: 0.9rem;
+    }
+    
+    i {
+      display: inline-block;
+      width: 64px;
+      height: 40px;
+      border-radius: 20px;
+      vertical-align: middle;
+      transition: .25s .09s;
+      position: relative;
+      background: $color-off;
+        @include media-breakpoint-down(md) {
+          height: 30px;
+        }
+  
+  
+      &:after {
+        content: " ";
+        display: block;
+        width: 30px;
         height: 30px;
-      }
-
-
-    &:after {
-      content: " ";
-      display: block;
-      width: 30px;
-      height: 30px;
-      top: 5px;
-      left: 5px;
-      border-radius: 50%;
-      background: #fff;
-      position: absolute;
-      box-shadow: 1px 2px 4px 0 rgba(#000, .4);
-      transition: .15s;
-      @include media-breakpoint-down(md) {
-        width: 20px;
-        height: 20px;
+        top: 5px;
+        left: 5px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        box-shadow: 1px 2px 4px 0 rgba(#000, .4);
+        transition: .15s;
+        @include media-breakpoint-down(md) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
-  }
+    
+    // Checked-state
+    > input:checked + i {
+      background: $color-on;
+    }
   
-  // Checked-state
-  > input:checked + i {
-    background: $color-on;
-  }
-
-  > input:disabled + i {
-    background: $color-disabled;
-  }
-
-  > input:checked + i + span {
-    color: $color-on;
-  }
+    > input:disabled + i {
+      background: $color-disabled;
+    }
   
-  > input:checked + i:after {
-    transform: translateX(25px);
-      @include media-breakpoint-down(md) {
-        transform: translateX(35px);
-      }
+    > input:checked + i + span {
+      color: $color-on;
+    }
+    
+    > input:checked + i:after {
+      transform: translateX(25px);
+        @include media-breakpoint-down(md) {
+          transform: translateX(35px);
+        }
+    }
   }
 }
 

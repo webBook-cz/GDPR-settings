@@ -5,14 +5,14 @@ groups:
     slug: functional_cookies
     sort_order: 1
     description: |
-        <p>These cookies are required for the website to work.</p>
+        <p>Functional cookies are used to identify you among other web requests.</p>
     cookies:
     -   name: Functional
         code: functional
         initial_status: 1
         sort_order: 1
         description: |
-            <p>Functional cookies are used to identify you among other web requests.</p>
+            <p>These cookies are required for the website to work.</p>
 
 
 -   name: Personalized Cookies
@@ -20,14 +20,14 @@ groups:
     slug: personalized_cookies
     sort_order: 2
     description: |
-        <p>These cookies are required for registration on our website and filling our contact forms.</p>
+        <p>We use this cookies according to personal info to help our registered users better content (Registration is not allowed without these cookies).</p>
     cookies:
     -   name: Personalized
         code: personalized
         initial_status: 0
         sort_order: 1
         description: |
-            <p>We use this cookies according to personal info to help our registered users better content (Registration is not allowed without these cookies).</p>
+            <p>These cookies are required for registration on our website and filling our contact forms.</p>
 
 
 -   name: Analytics Cookies
@@ -35,14 +35,14 @@ groups:
     slug: analytics_cookies
     sort_order: 3
     description: |
-        <p>We use these cookies to measure how you interact with our website.</p>
+        <p>Analytical cookies allow us to measure the performance of our website and our advertising campaigns (eg Google Analytics). If you turn off the use of analytics cookies in relation to your visit, we lose the ability to analyze the performance and subsequent improvement of our site.</p>
     cookies:
     -   name: Analytics
         code: analytics
         initial_status: 0
         sort_order: 1
         description: |
-            <p>Analytical cookies allow us to measure the performance of our website and our advertising campaigns (eg Google Analytics). If you turn off the use of analytics cookies in relation to your visit, we lose the ability to analyze the performance and subsequent improvement of our site.</p>
+            <p>We use these cookies to measure how you interact with our website.</p>
 
 
 -   name: Advertisement Cookies
@@ -50,11 +50,11 @@ groups:
     slug: advertisement_cookies
     sort_order: 4
     description: |
-        <p>Advertising cookies help to display advertising on the website based on your interests.</p>
+        <p>Advertising cookies are used by us or our partners so that we can display suitable content or advertisements both on our website and on the websites of third parties using so-called pseudonymized profiles, which do not maintain your personal data.</p>
     cookies:
     -   name: Advertisement
         code: advertisement
         initial_status: 0
         sort_order: 1
         description: |
-            <p>Advertising cookies are used by us or our partners so that we can display suitable content or advertisements both on our website and on the websites of third parties using so-called pseudonymized profiles, which do not maintain your personal data.</p>
+            <p>Advertising cookies help to display advertising on the website based on your interests.</p>

@@ -5,14 +5,14 @@ groups:
     slug: functional_cookies
     sort_order: 1
     description: |
-        <p>Technické cookies sú nevyhnutné na správne fungovanie webu.</p>
+        <p>Technické cookies sa používajú na odlíšenie vašich aktivít na stránke od ostatných požiadaviek na web.</p>
     cookies:
     -   name: Technické
         code: functional
         initial_status: 1
         sort_order: 1
         description: |
-            <p>Technické cookies sa používajú na odlíšenie vašich aktivít na stránke od ostatných požiadaviek na web.</p>
+            <p>Technické cookies sú nevyhnutné na správne fungovanie webu.</p>
 
 
 -   name: Personalizované Cookies
@@ -20,14 +20,14 @@ groups:
     slug: personalized_cookies
     sort_order: 2
     description: |
-        <p>Tieto cookies sú nevyhnutné pre vašu registráciu a odosielanie kontaktných formulárov.</p>
+        <p>Používame tieto cookies aby sme mohli dodávať najmä našim registrovaným užívateľom čo najlepší obsah (Bez týchto cookies registrácia nie je možná).</p>
     cookies:
     -   name: Personalizované
         code: personalized
         initial_status: 0
         sort_order: 1
         description: |
-            <p>Používame tieto cookies aby sme mohli dodávať najmä našim registrovaným užívateľom čo najlepší obsah (Bez týchto cookies registrácia nie je možná).</p>
+            <p>Tieto cookies sú nevyhnutné pre vašu registráciu a odosielanie kontaktných formulárov.</p>
 
 
 -   name: Analytické Cookies
@@ -35,14 +35,14 @@ groups:
     slug: analytics_cookies
     sort_order: 3
     description: |
-        <p>Tieto cookies nám pomáhajú sledovať používanie našich stránok.</p>
+        <p>Analytické cookies nám umožňujú meranie výkonu nášho webu a našich reklamných kampaní (napr. Google Analytics). Pokiaľ vypnete používanie analytických cookies vo vzťahu k Vašej návšteve, strácame možnosť analýzy výkonu a následné zlepšovanie našich stránok.</p>
     cookies:
     -   name: Analytické
         code: analytics
         initial_status: 0
         sort_order: 1
         description: |
-            <p>Analytické cookies nám umožňujú meranie výkonu nášho webu a našich reklamných kampaní (napr. Google Analytics). Pokiaľ vypnete používanie analytických cookies vo vzťahu k Vašej návšteve, strácame možnosť analýzy výkonu a následné zlepšovanie našich stránok.</p>
+            <p>Tieto cookies nám pomáhajú sledovať používanie našich stránok.</p>
 
 
 -   name: Reklamné Cookies
@@ -50,11 +50,11 @@ groups:
     slug: advertisement_cookies
     sort_order: 4
     description: |
-        <p>Reklamné cookies pomáhajú zobrazovať reklamu na webe založenú na vašich záujmoch.</p>
+        <p>Reklamné cookies používame my alebo naši partneri, aby sme Vám mohli zobraziť vhodné obsahy alebo reklamy ako na našich stránkach, tak na stránkach tretích subjektov s využitím tzv. pseudonymizovaných profilov, ktoré neudržujú vaše osobné údaje.</p>
     cookies:
     -   name: Reklamné
         code: advertisement
         initial_status: 0
         sort_order: 1
         description: |
-            <p>Reklamné cookies používame my alebo naši partneri, aby sme Vám mohli zobraziť vhodné obsahy alebo reklamy ako na našich stránkach, tak na stránkach tretích subjektov s využitím tzv. pseudonymizovaných profilov, ktoré neudržujú vaše osobné údaje.</p>
+            <p>Reklamné cookies pomáhajú zobrazovať reklamu na webe založenú na vašich záujmoch.</p>

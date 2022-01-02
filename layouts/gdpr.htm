@@ -34,12 +34,10 @@ function onStart()
 </head>
 <body id="body">
     {% component 'cookieBanner' theme = 'light' %}
-    {% partial 'site/header' %}
-    {% partial 'site/nav-menu' %}
+
     <main class="web-main">
         {% page %}
     </main>
-    {% partial 'site/footer' %}
 
     <div id="gdpr-reload">
         {% partial 'gdpr/gdpr' %}

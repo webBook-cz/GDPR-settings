@@ -14,7 +14,7 @@
         'save_settings' => 'Uložit nastavení',
     ],
     'cookie_manager'  => [
-        'title' => 'Detailní nastavenie Cookies',
+        'title' => 'Detailní nastavení Cookies',
         'expiry'      => [
             3  => 'Zeptat se znovu za 3 měsíce',
             6  => 'Zeptat se znovu za 6 měsíců',
