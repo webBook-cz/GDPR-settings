@@ -1,0 +1,184 @@
+.gdpr-banner {
+  position: fixed;
+  padding: 15px;
+  bottom: 0;
+  z-index: 10000;
+  font-display: swap;
+  font-style: normal;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 300; }
+  .gdpr-banner.dark-theme {
+    color: #eceeec;
+    background-color: rgba(40, 40, 40, 0.98); }
+  .gdpr-banner.light-theme {
+    color: #706f6f;
+    background-color: rgba(250, 250, 250, 0.98); }
+  .gdpr-banner a {
+    font-weight: 400; }
+
+.gdpr-banner_part-1 {
+  padding: 1.2rem 0; }
+  @media (max-width: 991.98px) {
+  .gdpr-banner_part-1 {
+    padding: 0.6rem 0; } }
+
+.gdpr-banner_part-2 {
+  text-align: center; }
+
+.gdpr-banner__wrapper {
+  position: relative; }
+
+.gdpr-banner__message {
+  line-height: 1.2rem; }
+
+.gdpr-banner__button {
+  min-width: 140px; }
+
+.gdpr-banner__opt-out {
+  margin-top: 1rem; }
+
+.advanced-gdpr {
+  overflow-y: hidden;
+  max-height: 540px;
+  /* approximate max height */
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+
+.advanced-gdpr.closed {
+  max-height: 0; }
+
+.btn-gdpr {
+  background-color: #bfd3d4; }
+
+.gdpr-banner__button--dismiss {
+  cursor: pointer;
+  background: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  border: none; }
+
+.gdpr-banner__dismiss {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  z-index: 1000;
+  position: absolute;
+  right: 30px;
+  top: 15px; }
+
+h4.gdpr-settings {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 4px; }
+
+.group-explanation {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 300; }
+  @media (max-width: 991.98px) {
+  .group-explanation {
+    max-height: 2.1rem;
+    overflow: auto; } }
+
+.gdpr-full .group-explanation {
+  max-height: 5rem;
+  overflow: visible; }
+
+.settings-buttons {
+  padding: 1rem;
+  text-align: center; }
+
+.btn-wide {
+  width: 200px;
+  height: 42px; }
+  @media (max-width: 991.98px) {
+  .btn-wide {
+    width: 140px; } }
+
+.gdpr-cookie-manager label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+  margin: 1em 0 0.2em; }
+  @media (max-width: 991.98px) {
+    .gdpr-cookie-manager label {
+      margin: 0.3em 0 0.2em; } }
+  .gdpr-cookie-manager label > input {
+    display: none; }
+  .gdpr-cookie-manager label small {
+    font-size: 0.9rem; }
+  .gdpr-cookie-manager label i {
+    display: inline-block;
+    width: 64px;
+    height: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    transition: 0.25s 0.09s;
+    position: relative;
+    background: #8ea2b5; }
+  @media (max-width: 991.98px) {
+      .gdpr-cookie-manager label i {
+        height: 30px; } }
+  .gdpr-cookie-manager label i:after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.15s; }
+  @media (max-width: 991.98px) {
+        .gdpr-cookie-manager label i:after {
+          width: 20px;
+          height: 20px; } }
+  .gdpr-cookie-manager label > input:checked + i {
+    background: #2f3c48; }
+  .gdpr-cookie-manager label > input:disabled + i {
+    background: #bfd3d4; }
+  .gdpr-cookie-manager label > input:checked + i + span {
+    color: #2f3c48; }
+  .gdpr-cookie-manager label > input:checked + i:after {
+    transform: translateX(25px); }
+  @media (max-width: 991.98px) {
+      .gdpr-cookie-manager label > input:checked + i:after {
+        transform: translateX(35px); } }
+
+.dark-theme h4.gdpr-settings {
+  color: #fff;
+  border-bottom: 1px solid rgba(53, 53, 53, 0.98); }
+  .dark-theme .group-explanation {
+    color: #eceeec; }
+  .dark-theme .gdpr-banner__button--dismiss {
+    color: #fff; }
+  .dark-theme .gdpr-banner__button--dismiss:hover {
+    color: #2f3c48; }
+  .dark-theme label span {
+    color: #fff; }
+  .dark-theme label small {
+    color: #eceeec; }
+
+.light-theme h4.gdpr-settings {
+  color: #000;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.98); }
+  .light-theme .group-explanation {
+    color: #706f6f; }
+  .light-theme .gdpr-banner__button--dismiss {
+    color: #706f6f; }
+  .light-theme .gdpr-banner__button--dismiss:hover {
+    color: #2f3c48; }
+  .light-theme label span {
+    color: #000; }
+  .light-theme label small {
+    color: #706f6f; }
+
+.gdpr-banner__button {
+  cursor: pointer;
+}

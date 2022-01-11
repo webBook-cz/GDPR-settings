@@ -1,7 +1,7 @@
 <?php return [
     'cookie_banner'   => [
         'description'         => 'Zobrazuje cookie panel',
-        'message'             => 'Náš web potřebuje pro přizpůsobení obsahu a analýzu návštevnosti váš soulas. Souhlas vyjádříte kliknutím na tlačidlo "OK".',
+        'message'             => 'Náš web potřebuje pro přizpůsobení obsahu a analýzu návštevnosti váš souhlas. Souhlas vyjádříte kliknutím na tlačidlo "OK".',
         'more_info'           => 'Více informací',
         'advanced_settings'   => 'Nastavení',
         'decline'             => 'Svúj souhlas můžete odmítnout',
