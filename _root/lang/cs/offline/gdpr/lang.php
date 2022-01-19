@@ -4,7 +4,7 @@
         'message'             => 'Náš web potřebuje pro přizpůsobení obsahu a analýzu návštevnosti váš souhlas. Souhlas vyjádříte kliknutím na tlačidlo "OK".',
         'more_info'           => 'Více informací',
         'advanced_settings'   => 'Nastavení',
-        'decline'             => 'Svúj souhlas můžete odmítnout',
+        'decline'             => 'Svůj souhlas můžete odmítnout',
         'here'                => 'zde',
         'accept'              => 'OK',
     ],
