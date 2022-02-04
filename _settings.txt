@@ -4,6 +4,12 @@ php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_en.yaml 
 php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_cs.yaml --replace
 php artisan gdpr:import --path=plugins/offline/gdpr/assets/presets/gdpr_sk.yaml --replace
 
+
+/// theme: add 
+assets/scss/webbook/gdpr.scss
+	or:
+assets/css/gdpr.css
+
 /// theme: fields.yaml settings
 
         info_section_02:
